@@ -52,6 +52,7 @@ ul{
     cursor: pointer;
     border: white solid 2px;
     border-radius: 10px;
+    padding: 5px 20px;
 }
 .menu ul li:hover{
    background-color: white;
@@ -139,4 +140,57 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 580px){
+    body{
+        color: red;
+        margin: 0px;
+        width: 680px;
+    }
+    .header,.mainFront{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header{
+        width: 580px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu ul li{
+        margin: 10px;
+        text-align: center;
+        
+    }
+    img{
+        width: 100%;
+    }
+    .image, .mainFront2{
+        margin: 10px;
+    }
+    
+    .randomInfor{
+        flex-direction: column;
+        
+        width: 250px;
+    }
+    .randomInfor > li{
+        background-color: #1f2937;
+        width: 400px;
+        color: white;
+        padding: 20px;
+        box-shadow: 1px 3px 10px black;
+        border-radius: 10px;
+        margin: 10px 20px;
+    }
+    .randomInfor > li >img{
+        width: 100%;
+    }
 }
