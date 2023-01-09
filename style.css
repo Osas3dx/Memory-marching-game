@@ -60,6 +60,7 @@ ul{
     
 }
 button{
+    margin: auto;
     background-color: #3882f6;
     padding: 5px 20px;
     color: #ffffff;
@@ -200,6 +201,23 @@ h3{
 }
 
 .theBtn button{
-    font-size: 10px;
+    background-color: #3882f6;
+    color: #ffffff;
+    width: auto;
+    border-radius: 5px;
+}
+.theTest{
+    padding: 0px;
+    margin: 0px;
+}
+.theBtn{
+    margin: auto;
+}
+.callBack{
+    color: rgb(255, 255, 255);
+    background-color: #3882f6;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
 }
 }
