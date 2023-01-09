@@ -141,18 +141,18 @@ h3{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 600px ){
     body{
         color: red;
         margin: 0px;
-        width: 680px;
+        width: 100%;
     }
     .header,.mainFront{
         display: flex;
         flex-wrap: wrap;
     }
     .header{
-        width: 580px;
+        width: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -183,7 +183,7 @@ h3{
     }
     .randomInfor > li{
         background-color: #1f2937;
-        width: 400px;
+        width: 300px;
         color: white;
         padding: 20px;
         box-shadow: 1px 3px 10px black;
@@ -193,4 +193,13 @@ h3{
     .randomInfor > li >img{
         width: 100%;
     }
+    
+.callBack, .grey{
+    padding: 5px;
+    font-size: 12px;
+}
+
+.theBtn button{
+    font-size: 10px;
+}
 }
