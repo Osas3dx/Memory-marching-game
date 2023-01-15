@@ -169,8 +169,8 @@ a{
     align-items: center;
 }
 .logoName img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 .burger div{
     width: 25px;
@@ -208,6 +208,8 @@ a{
     }
     .header{
         width: auto;
+        margin: 0px;
+        padding:  0px 20px;
         justify-content: space-between;
         align-items: center;
     }
@@ -223,7 +225,7 @@ a{
         background-color: #234e93;
         right: 0px;
         border-radius: 50px 0px 0px 50px;
-        top: 10vh;
+        top: 14vh;
         width: 60%;
         display: none;
         transform: translateX(100%);
@@ -282,7 +284,10 @@ a{
     width: 90px;
 
 }
-
+.logoName img{
+    width: 40px;
+    height: 40px;
+}
 .theTest{
     padding: 0px;
     margin: 0px;
