@@ -18,10 +18,12 @@ body{
     padding: 20px;
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: space-around;
     overflow-x: hidden;
+}
+.header{
+    
+    align-items: center;
 }
 .image{
     margin-left: 50px;
@@ -151,10 +153,24 @@ h3{
 a{
     text-decoration: none;
 }
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+}
 .menu ul li {
 
     border: none;
-    font-size: 25px;
+    font-size: 15px;
+}
+.logoName{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.logoName img{
+    width: 80px;
+    height: 80px;
 }
 .burger div{
     width: 25px;
@@ -168,6 +184,11 @@ a{
 .burger{
     display: none;
 }
+.universtiy a{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
 @media screen and (max-width: 750px ){
     body{
         
@@ -180,10 +201,9 @@ a{
         overflow-x: hidden;
         border: solid 2px red;
     }
-    .header,.mainFront{
+    .mainFront{
         display: flex;
         flex-wrap: wrap;
-        
         min-height: 0px;
     }
     .header{
