@@ -209,6 +209,7 @@ a{
         display: block;
     }
     .menu-active{
+        display: block;
         transform: translateX(0%);
     }
     img{
