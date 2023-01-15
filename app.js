@@ -16,6 +16,8 @@ const menuSlide = () =>{
             }
             
         });
+        //burger animation
+        burger.classList.toggle("toggle");
     })
 
 
