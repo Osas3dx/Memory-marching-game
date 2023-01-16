@@ -9,14 +9,13 @@ body{
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    
     
 }
 .wrapper{
     background-color: white;
     color: white;
     height: 1150px;
-    overflow-x: hidden;
 }
 .header,.mainFront{
     padding: 20px;
@@ -204,11 +203,6 @@ a{
         width: 100%;
         
     }
-    .wrapper{
-        
-        overflow-x: hidden;
-
-    }
     .mainFront{
         display: flex;
         flex-wrap: wrap;
@@ -229,9 +223,10 @@ a{
         flex-direction: column;
     }
     .menu{
+        overflow: hidden;
         position: absolute;
         background-color: #234e93;
-        right: 0px;
+        right: -5px;
         border-radius: 50px 0px 0px 50px;
         top: 14vh;
         width: 60%;
@@ -240,18 +235,38 @@ a{
         transition: all 0.5s ease-in;
         
     }
-    
-    .menu ul li{
-        margin: 10px;
+    .menu ul{
+        position: relative;
+        margin: 0px;
+        padding: 0px;
         text-align: center;
+        width: 50px;
+    }
+    .menu ul li a{
+        width: 100%;
+    }
+    .menu ul li {
         
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    cursor: pointer;
+    border: #cfcfcf solid 2px;
+    border-width: 3px 0px 0px 0px;
+    padding:  0% 100% ;
+    border-radius: 10px;
+    margin: 10px;
     }
     .burger{
         cursor: pointer;
         display: block;
     }
     .menu-active{
-        
+        box-shadow: 2px 3px 10px black;
         display: block;
         transform: translateX(0%);
     }
@@ -306,7 +321,7 @@ a{
 }
 .callBack{
     color: rgb(255, 255, 255);
-    background-color: #3882f6;
+    background-color: #234e93;;
     display: flex;
     border-radius: 10px;
     justify-content: space-around;

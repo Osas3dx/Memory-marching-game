@@ -3,23 +3,39 @@ h2,
 h3 {
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
+    background-color: none;
 }
 
 /* Styles for the agent profiles */
 .agent-profiles {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #1f2937;
+    border-radius: 20px;
 }
-
+.agent-profiles p{
+    color: black;
+    border-radius: 20px;
+    font-weight: 900;
+    padding: 10px;
+}
 .agent-profile {
-    width: 30%;
+    background-color: rgb(194, 194, 194);
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    height: 100%;
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 1px 3px 10px black;
 }
 
 .agent-profile img {
     width: 100%;
+    border-radius: 20px;
 }
 
 /* Styles for the contact section */
