@@ -23,4 +23,25 @@ const menuSlide = () =>{
 
 
 }
+const form = () =>{
+    const requestEl = document.querySelector('.RequestEl')
+    const formlayout = document.querySelector('.cover')
+    const xOutForm = document.querySelector('.fa-x')
+    //events 
+    requestEl.addEventListener('click', requestForm)
+    xOutForm.addEventListener('click', outTheForm)
+
+    // functions 
+    function outTheForm(){
+        formlayout.style.display = "none"
+        console.log("i'm out")
+    }
+    function requestForm(){
+        formlayout.style.display = "block"
+        console.log("what are you diong")
+    }
+}
+
 menuSlide();
+form();
+
