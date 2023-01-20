@@ -255,6 +255,16 @@ a{
         width: 100%;
         
     }
+        
+    h3{
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+        background-color: #1f2937;
+        border-radius: 0px 0px 133px 0px ;
+        margin: 80px 0px;
+}
     .mainFront{
         display: flex;
         flex-wrap: wrap;
