@@ -16,6 +16,7 @@
     padding: 20px;
     border-radius: 20px;
     box-shadow: 5px 15px 34px 0px #1f2937;
+    z-index: 5;
 }
 .formpop input{
     width: 100%;
