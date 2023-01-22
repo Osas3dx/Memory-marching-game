@@ -9,7 +9,9 @@ body{
     background-position: center;
 }
 .darkHeader{
-    background-color: rgb(9, 72, 15);
+    
+    background: rgb(9,72,15);
+    background: linear-gradient(49deg, rgba(9,72,15,1) 0%, rgba(47,72,88,1) 78%, rgba(47,72,88,1) 97%);
 }
 .imgAbout{
     width: 100%;
@@ -53,5 +55,7 @@ p{
     margin: auto;
     border-radius: 20px;
     overflow: hidden;
+    padding: 1px;
+    line-height: 180%;
     box-shadow: 0px 0px 16px rgb(0, 0, 0);
 }
