@@ -13,7 +13,7 @@ function showTime(){
     }
     if (hourNow <= 12)  {
         greeting.innerHTML =`${hourNow}:${addZero(minNow)}:${addZero(secNow)} ${amPm} <br>Good Morning`
-    } else if(hourNow < 18){
+    } else if(hourNow < 12){
         greeting.innerHTML =`${hourNow}:${addZero(minNow)}:${addZero(secNow)} ${amPm} <br>Good Afternoon` 
     } else{
         greeting.innerHTML =`${hourNow}:${addZero(minNow)}:${addZero(secNow)} ${amPm} <br>Good Evening`
