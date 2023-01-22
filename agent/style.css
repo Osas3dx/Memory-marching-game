@@ -13,7 +13,9 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(9, 72, 15);;
+    background: rgb(9,72,15);
+    background: linear-gradient(49deg, rgba(9,72,15,1) 0%, rgba(47,72,88,1) 78%, rgba(47,72,88,1) 97%);
+    background-repeat: no-repeat;
     border-radius: 20px;
 }
 .agent-profiles p{
