@@ -314,10 +314,10 @@ a{
         flex-direction: column;
     }
     .menu{
-        overflow: ;
+        overflow:hidden;
         position: absolute;
         background-color: var(--element-color);
-        right: 5px;
+        right: -20px;
         border-radius: 50px 0px 0px 50px;
         top: 14vh;
         width: 60%;
@@ -356,7 +356,7 @@ a{
         display: block;
     }
     .menu-active{
-        box-shadow: 2px 3px 10px black;
+        box-shadow: 0px 0px 20px black;
         display: block;
         transform: translateX(0%);
     }
