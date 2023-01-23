@@ -2,6 +2,7 @@ let submited = document.querySelector(".submit")
 
 submited.addEventListener('click', submit)
 function submit(){
+    
     console.log("email")
 }
 
