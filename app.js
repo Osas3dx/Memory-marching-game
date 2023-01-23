@@ -1,3 +1,10 @@
+let submited = document.querySelector(".submit")
+
+submited.addEventListener('click', submit)
+function submit(){
+    console.log("email")
+}
+
 const menuSlide = () =>{
     const burger = document.querySelector(".burger");
     const  menu = document.querySelector(".menu");
@@ -32,7 +39,7 @@ const form = () =>{
     requestEl.addEventListener('click', requestForm)
     xOutForm.addEventListener('click', outTheForm)
     
-    burger.toggleAttribute("false");
+    //burger.toggleAttribute("false");
     
     // functions 
     function outTheForm(){
@@ -46,6 +53,7 @@ const form = () =>{
 }
 // coding the time.
 //showTime();
+
 menuSlide();
 form();
 
