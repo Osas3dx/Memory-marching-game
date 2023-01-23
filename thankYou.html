@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/745f32f675.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,100;1,200;1,900&family=Quicksand&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
-
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        font-size: 250%;
+    }
     .gridDisplay{
 
         display: flex;
@@ -18,15 +26,33 @@
         height: 100vh;
 }
     .fa-circle-check{
-        font-size: 112px;
+        font-size: 1000%;
         color: rgb(103, 195, 70);
+    }
+    a{
+        text-decoration: none;
+        background-color: rgb(103, 195, 70);
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
     }
 </style>
 <body>
     <div class="gridDisplay">
     <h1>Email Sent</h1>
     <i class="fa-solid fa-circle-check"></i>
-    <a href="../index.html"> Back to home</a>
+    <a href="../index.html"> 
+        <i class="fa-solid fa-arrow-left"></i>Back to home</a>
 </div>
+<script>
+    let backHome = document.querySelector('a')
+    backHome.addEventListener('click', backHomeEl)
+    function backHomeEl(){
+        console.log("whating to goin home")
+        document.body.
+    }
+</script>
 </body>
 </html>

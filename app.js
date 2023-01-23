@@ -1,10 +1,4 @@
-let submited = document.querySelector(".submit")
 
-submited.addEventListener('click', submit)
-function submit(){
-    
-    console.log("email")
-}
 
 const menuSlide = () =>{
     const burger = document.querySelector(".burger");
@@ -40,7 +34,7 @@ const form = () =>{
     requestEl.addEventListener('click', requestForm)
     xOutForm.addEventListener('click', outTheForm)
     
-    //burger.toggleAttribute("false");
+    burger.toggleAttribute("false");
     
     // functions 
     function outTheForm(){
