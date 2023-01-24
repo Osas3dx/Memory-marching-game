@@ -1,15 +1,28 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
-  $to = "recipient@example.com";
-  $subject = "Email from $name";
-  $headers = "From: $email" . "\r\n" .
-  "Reply-To: $email" . "\r\n" .
-  "X-Mailer: PHP/" . phpversion();
-  mail($to,$subject,$message,$headers);
-  echo "Email sent successfully!";
-}
-?>
+  if(isset($_POST['submit']))
+  {
+    $Name =$_POST['name'];
+    $Location =$_POST['location'];
+    $PhoneNumber =$_POST['number'];
+    $Email =$_POST['email'];
+    $Msg =$_POST['message'];
+    if(empty($Name) || empty($Location) || empty($PhoneNumber) || empty($Email) || empty($Msg))
+    {
+      header('location:index.php?error');
+    }
+    else
+    {
+      $to = "oboseosayomore37@gmail.com";
 
+      if(mail($to,$Location,$Email,$Msg))
+      {
+        header("location:index.php?success");
+      }
+    }
+  }
+  else
+  {
+    header("location:index.php");
+
+  }
+?>

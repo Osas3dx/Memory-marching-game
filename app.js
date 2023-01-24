@@ -50,5 +50,5 @@ const form = () =>{
 //showTime();
 
 menuSlide();
-form();
+//form();
 
