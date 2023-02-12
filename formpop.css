@@ -47,6 +47,11 @@ body{
 .fa-x{
     margin-left: 90%;
     color: red;
+    font-size: 10px;
+    width: 10%;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
 }
 
 .fa-x:hover{
