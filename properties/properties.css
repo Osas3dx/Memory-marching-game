@@ -56,6 +56,7 @@ section ul li a{
     flex-direction: column;
     list-style: none;
     padding: 10px;
+    display: none;
 }
 
 .module{
@@ -119,5 +120,15 @@ section ul li{
 
 section ul li:hover{
     scale: 1.0;
+}
+
+.full-img{
+    scroll-behavior: smooth;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    transition: all 0.25s ease-out;
 }
 }
