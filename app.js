@@ -25,30 +25,7 @@ const menuSlide = () =>{
 
 
 }
-const form = () =>{
-    const  menu = document.querySelector(".menu");
-    const requestEl = document.querySelector('.RequestEl')
-    const formlayout = document.querySelector('.cover')
-    const xOutForm = document.querySelector('.fa-x')
-    //events 
-    requestEl.addEventListener('click', requestForm)
-    xOutForm.addEventListener('click', outTheForm)
-    
-    burger.toggleAttribute("false");
-    
-    // functions 
-    function outTheForm(){
-        formlayout.style.display = "none"
-        console.log("i'm out")
-    }
-    function requestForm(){
-        formlayout.style.display = "block"
-        console.log("what are you diong")
-    }
-}
 // coding the time.
 //showTime();
 
 menuSlide();
-//form();
-

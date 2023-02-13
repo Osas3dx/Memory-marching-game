@@ -1,0 +1,50 @@
+:root{
+    --div-background-color: #09480F ;
+    --div-background2-color: #1f2937;
+    --button-color: #AEAD88;
+    --button-hover-color: #9f9e7e;
+    --btnText-color: black;
+    --element-color: #386C5F;
+}
+
+
+section{
+    background-color: rgb(255, 255, 255);
+    box-shadow:inset 1px 2px 20px 0px black;
+    padding: 10px;
+    border-radius: 10px;
+}
+section ul{
+    flex-wrap: wrap;
+}
+section ul li{
+    background-color:var(--div-background2-color);
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -10px rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+
+}
+section ul li:hover{
+    scale: 1.4;
+}
+section ul li img{
+    width: 200px;
+    border: none;
+    display: flex;
+    margin-top: 10px;
+
+}
+section ul li h3{
+    background-color: var(--button-color);
+    font-size: 20px;
+    padding: 0;
+    
+}
+section ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

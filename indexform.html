@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formpop.css">
-    <script src="app.js"></script>
+    
     
     <title>Form</title>
 </head>
-<body>
+<body class="bodyForm">
  
   <div class="cover">
     <form class="formpop" action="https://formsubmit.co/oboseosayomore4@gmail.com" method="POST">
-      <button class="fa-x">back to home</button>
+    <div class="backToHome" id="backHome">Back To Home</div>
+    <input type="hidden" name="_template" value="table">
       <input type="text" name= "name" placeholder="Full Name" required><br>
-      <input type="hidden" name="_next" value="./thankYou.html">
+      <input type="hidden" name="_next" value="https://osas3dx.github.io/The-Odin-css-projct/thankYou.html">
       <input type="text" name = "location" placeholder="Location of University" required><br>
 
       <input type="tel" name= "number" placeholder="Phone number" id="" required ><br>
@@ -28,5 +29,6 @@
       <button name = "submit" class="submit">Request</button>
     </form>
     </div>
+    <script src="appform.js"></script>
 </body>
 </html>
