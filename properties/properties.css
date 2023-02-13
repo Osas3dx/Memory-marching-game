@@ -9,13 +9,16 @@
 
 
 section{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--button-color);
     box-shadow:inset 1px 2px 20px 0px black;
     padding: 10px;
     border-radius: 10px;
 }
 section ul{
-    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 section ul li{
     background-color:var(--div-background2-color);
@@ -27,24 +30,94 @@ section ul li{
     transition: all 0.2s ease-in-out;
 
 }
-section ul li:hover{
-    scale: 1.4;
-}
 section ul li img{
-    width: 200px;
+    cursor: pointer;
+    width: 100%;
     border: none;
     display: flex;
     margin-top: 10px;
 
 }
 section ul li h3{
-    background-color: var(--button-color);
+    background-color: white;
+    color: black;
     font-size: 20px;
-    padding: 0;
+    padding: 10px;
     
 }
 section ul li a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+.minpics{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+}
+
+.module{
+    display: flex;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.599);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.6s ease-out;
+}
+.module.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.module p {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+
+}
+
+.full-img{
+    scroll-behavior: smooth;
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    transition: all 0.25s ease-out;
+}
+.full-img.open{
+    transform: translate(-50%, -50%) scale(1.0);
+}
+@media screen and (max-width: 750px ){
+    
+section ul{
+    margin: 10px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+section ul li{
+    width: 200px;
+    background-color:var(--div-background2-color);
+    margin: 10px auto ;
+    width: 250px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -10px rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+
+}
+
+section ul li:hover{
+    scale: 1.0;
+}
 }
