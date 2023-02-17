@@ -26,6 +26,9 @@
     height: 200%;
     
 }
+h4{
+    font-size: 25px;
+}
 .info{
     border-radius: 20px;
     padding: 10px 50px;
@@ -44,19 +47,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease-out;
+    transition: all 1s ease-in-out;
 
-}
-.number:hover{
-    background-color: rgb(72, 123, 77);
 }
 @media screen and (max-width: 750px )  {
     .maincontact{
         flex-direction: column;
-        overflow-x: hidden;
-        overflow-y: scroll;
+        height: 500px;
     }
     .box{
         display: none;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .info{
+        box-shadow: none;
     }
 }
