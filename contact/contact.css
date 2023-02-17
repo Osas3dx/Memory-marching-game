@@ -4,8 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 250px;
-    overflow: hidden;
+    height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -13,32 +12,51 @@
 }
 .box{
     width: 18px;
-    height: 300px;
+    height: 500px;
     background-color:  black;
 }
 .maincontact{
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #1f29379e;
+    background-color: #211f069e;
     padding: 20px;
     width: 70%;
-    height: 200px;
     gap: 10px;
+    height: 200%;
     
 }
 .info{
-    background-color: rgb(195, 159, 121);
+    border-radius: 20px;
+    padding: 10px 50px;
+    width: 500px;
+    height: 200px;
+    box-shadow: 5px 3px 10px black;
 }
 .number{
+    border: solid 4px white;
+    color: white;
+    text-decoration: none;
     background-color: gray;
-    font-size: 30px;
+    font-size: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-out;
 
+}
+.number:hover{
+    background-color: rgb(72, 123, 77);
 }
 @media screen and (max-width: 750px )  {
     .maincontact{
         flex-direction: column;
         overflow-x: hidden;
         overflow-y: scroll;
+    }
+    .box{
+        display: none;
     }
 }
