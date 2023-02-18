@@ -32,7 +32,7 @@ h4{
 .info{
     border-radius: 20px;
     padding: 10px 50px;
-    width: 500px;
+    width: 140%;
     height: 200px;
     box-shadow: 5px 3px 10px black;
 }
@@ -47,8 +47,11 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
+}
+.number:hover{
+    background-color: rgba(128, 128, 128, 0.429);
 }
 @media screen and (max-width: 750px )  {
     .maincontact{
