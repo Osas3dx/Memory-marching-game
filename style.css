@@ -135,9 +135,11 @@ ul{
 button{
     margin: auto;
     background-color: var(--button-color);
-    padding: 5px 20px;
-    color: var(--btnText-color);
-    border-radius: 5px;
+    padding: 10px 25px;
+    color: var(--div-background2-color);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
     border: none;
 }
 button:hover{
@@ -272,6 +274,7 @@ a{
     text-align: center;
     margin: auto;
 }
+
 @media screen and (max-width: 750px ){
     body{
         
@@ -328,11 +331,11 @@ a{
     .menu{
         overflow:hidden;
         position: absolute;
-        background-color: var(--element-color);
-        right: -20px;
+        background-color:#386c5ff4;
+        right: -0px;
         border-radius: 50px 0px 0px 50px;
-        top: 14vh;
-        width: 60%;
+        top: 16%;
+        width: 55%;
         display: none;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
@@ -354,7 +357,7 @@ a{
     width: 100%;
     padding: 0px;
     list-style: none;
-    font-size: 18px;
+    font-size: 23px;
     color: #E5E7EB;
     cursor: pointer;
     border: #cfcfcf solid 2px;
