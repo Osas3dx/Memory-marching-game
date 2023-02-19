@@ -117,16 +117,15 @@ section ul li a{
 @media screen and (max-width: 750px ){
     
 section ul{
-    margin: 10px;
+    margin: 2px;
     padding: 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 section ul li{
-    width: 200px;
     background-color:var(--div-background2-color);
-    margin: 10px auto ;
+    margin: 5px auto ;
     width: 80%;
     padding: 10px;
     list-style: none;
@@ -136,9 +135,6 @@ section ul li{
 
 }
 
-section ul li:hover{
-    scale: 1.0;
-}
 
 .full-img{
     scroll-behavior: smooth;
