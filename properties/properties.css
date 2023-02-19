@@ -66,6 +66,7 @@ section ul li a{
     width: 100%;
     height: 100%;
     pointer-events: none;
+    overflow: scroll;
     opacity: 0;
     z-index: 10;
     transition: all 0.6s ease-out;
@@ -106,6 +107,13 @@ section ul li a{
     padding: 10px;
     box-shadow: 0px 0px 5px black;
 }
+.imgAndText img{
+    width: 70%;
+    overflow: scroll;
+}
+.imgAndText{
+    background-color: pink;
+}
 @media screen and (max-width: 750px ){
     
 section ul{
@@ -140,6 +148,10 @@ section ul li:hover{
     left: 50%;
     transform: translate(-50%, -50%) scale(0.0);
     transition: all 0.25s ease-out;
+}
+.imgAndText img{
+    width: 100%;
+    overflow: scroll;
 }
 
 section ul li{
