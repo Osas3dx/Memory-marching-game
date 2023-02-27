@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+body{
+    background-color: rgb(160, 131, 93);
+    width: 987px;
+    margin: auto;
+}
+
+fieldset{
+    background-color: rgb(255, 226, 188);
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 21px;
+    border: none;
+    border-radius: 8px;
+    
+}
+.userProfile{
+    display: flex;
+    flex-direction: column;
+
+}
+.userProfile input{
+    background-color: burlywood;
+    padding: 13px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+}
+.userProfile input:active{
+    background-color: rgb(0, 0, 0);
+    border: none;
+
+}
+.userProfile input:focus{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+legend{
+    transition: all 0.3s ease-in-out;
+    font-size: 0px;
+    margin: auto;
+    height: 13px;
+    width: 30%;
+    border-radius: 21px;
+    padding: 13px;
+    overflow: hidden;
+}
+legend p{
+    background-color:  burlywood;
+    font-size: 13px;
+    padding: 12px;
+    border-radius: 8px;
+}
+legend:hover{
+    padding-bottom: 100px;
+    background-color: rgb(255, 226, 188);
+    border-bottom: 5px solid black;
+}
+
+
+.hovers{
+    background-color: rgb(255, 255, 255);
+    font-size: 34px;
+    border-radius: 21px;
+    padding: 13px;
+
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: brown;
+    margin: 0;
+  font: inherit;
+  color: white;
+  width: 1.55em;
+  height: 0.8em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"]:before {
+  content:"";
+  font-size: 8px;
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #ff32ff34;
+}
+input[type="checkbox"]:checked {
+  transform: scale(1);
+  
+  box-shadow: 1em 1em #ffffff;
+}
+textarea{
+    width: 100%;
+}
+    </style>
+
+
+</head>
+<body>
+    <form action="" method="">
+    <fieldset class="userProfile">
+        <legend>User Profile <br><p>A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual
+        </p></legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br>
+        
+        <label for="user_email">Email Addrress:</label>
+        <input type="email" name="email" id="user_email" placeholder="you@example"><br>
+        
+        <label for="user_password">Password:</label>
+        <input type="password" name="password" id="user_password"><br>
+    </fieldset>
+
+    <fieldset class="Orgainc">
+        <legend>Organic details <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+        </p></legend>
+        <label for="user_date">Date Of Birth</label>
+        <input type="date" name="date" id="user_date"><br>
+        
+
+
+        <select name = "counties">
+            <optgroup label="Africa">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Kayen">Kayen</option>
+            <option value="Ghana">Ghana</option>
+            <option value="South African" selected>South African</option>
+            <option value="Moscow">Moscow</option>
+            <option value="Gambia">Gambia</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="">United States</option>
+            <option value="">Canada</option>
+            <option value="">Mexico</option>
+            <option value="">Greenland</option>
+        </optgroup>
+        </select><br>
+        <span>Gender:</span>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <br>
+    </fieldset>
+        <fieldset class="Hobbies">
+            <legend>Hobbies<br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+            </p></legend>
+        <input type="checkbox" name="hobbies" id="Learning" value="Learning">
+        <label for="Learning">Learning</label><br>
+        
+        <input type="checkbox" name="hobbies" id="Gardening" value="Gardening">
+        <label for="Gardening">Gardening</label><br>
+
+        <input type="checkbox" name="hobbies" id="Board_Game" value="Board_Game">
+        <label for="Board_Game">Board Game</label><br>
+
+        <input type="checkbox" name="hobbies" id="Dance" value="Dance">
+        <label for="Dance">Dance</label><br>
+
+        <input type="checkbox" name="hobbies" id="writing" value="writing">
+        <label for="writing">Writing</label><br>
+
+        <input type="checkbox" name="hobbies" id="chess" value="chess">
+        <label for="chess">Chess</label><br>
+    </fieldset>
+        <br>
+    <fieldset>
+        <legend>Message<br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex?
+        </p></legend>
+        <label for="text">Text</label>
+        <textarea name="message" id="text"></textarea>
+    </fieldset>
+    </form>
+
+    <script>
+        const legends = document.querySelectorAll('legend')
+        const fieldsets = document.querySelectorAll('fieldset')
+
+        
+        let legend
+        fieldsets.forEach(fieldset =>{
+            fieldset.addEventListener('mouseover', (e)=>{
+                let tage = e.target.tagName
+                fieldset.childNodes[1].style.fontSize = "21px"
+                fieldset.childNodes[1].style.margin = "auto"
+                fieldset.childNodes[1].classList.add('hovers')
+            })
+            
+            fieldset.addEventListener('mouseout', (e)=>{
+                let tage = e.target.tagName
+                fieldset.childNodes[1].style.fontSize = "0px"
+                fieldset.childNodes[1].style.margin = "auto"
+                fieldset.childNodes[1].classList.remove('hovers')
+            })
+            
+        });
+
+        let numsArray = [2, 4, 7, 5, 6]
+        let numsTarget = 11;
+
+        function twoSum(numsArray, numsTarget){
+            
+        }
+
+        
+    </script>
+</body>
+</html>
