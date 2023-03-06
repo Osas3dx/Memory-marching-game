@@ -124,8 +124,9 @@ ul{
     color: #E5E7EB;
     cursor: pointer;
     border: white solid 2px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px 20px;
+    transition: all .3s ease-out;
 }
 .menu ul li:hover{
     background-color: var(--button-color);
@@ -282,14 +283,54 @@ a{
     top: 0px;
     left: 0px;
     display: none;
+    justify-content: center;
     
     
 }
-.ul-box{
+#modul-box-back{
+    padding: 10px;
+    margin: 10px;
+    height: 35px;
+    width: 83px;
+    line-break: none;
+    padding-bottom: 0px;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    
+    
+    
+}
+#modul-box-back:hover{
+    padding-bottom: 0px;
+    width: 83px;
+    color: white;
+    background-color: var(--button-color);
+    box-shadow: -5px -5px 13px rgba(0, 0, 0, 0.361);
+    border-bottom: 5px solid rgb(255, 255, 255) ;
+    overflow: hidden;
+}
+.div-box{
+    cursor: pointer;
     width: 100%;
-    padding: 40px 0px;
-    height: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 40px 10px;
+    font-size: 22px;
+    font-weight: 900;
+    border-bottom: 4px solid ;
     background-color: var(--element-color);
+    transition: all .3s ease-out;
+}
+.div-box:nth-child(1){
+    cursor: none;
+}
+.div-box:hover{
+    background-color: #56a390;
+    transform: scale(1.1);
+    font-size: 33px;
+
+    box-shadow: 0px 0px 8px black;
 }
 @media screen and (max-width: 750px ){
     body{
@@ -299,6 +340,7 @@ a{
         width: 100%;
         
     }
+
     .wrapper{
         box-shadow: 0px 0px 31px black;
         color: white;
@@ -418,9 +460,13 @@ a{
         width: 100%;
     }
     
-.callBack, .grey{
-    padding: 5px;
-    font-size: 12px;
+.grey{
+    padding: 15px;
+    font-size: 22px;
+}
+.callBack{
+    padding:  31px;
+    gap: 50px;
 }
 .theBtn button{
     margin: auto;
@@ -448,6 +494,34 @@ a{
     border-radius: 10px;
     justify-content: space-around;
 }
+
+.div-box:active{
+    transform: scale(1.1);
+    font-size: 21px;
+    box-shadow: 0px 0px 8px black;
+}
+.div-box:hover{
+    
+    background-color: #5fb49f;
+    transform: scale(1.0);
+    font-size: 21px;
+
+    box-shadow: 0px 0px 8px black;
+
+}
+
+.div-box{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 40px 10px;
+    font-size: 21px;
+    font-weight: 900;
+    border-bottom: 4px solid ;
+    background-color: var(--element-color);
+    transition: all .2s ease-out;
+}
 }
 
 @keyframes menufade {
@@ -469,3 +543,5 @@ a{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
